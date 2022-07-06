@@ -1,0 +1,105 @@
+.talent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(214, 214, 213);
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238);
+
+}
+
+.talentheading {
+    width: 40%;
+    height: 100%;
+}
+
+.talentheading h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 5vw;
+}
+
+.talents {
+    width: 35vw;
+    margin-right: 10vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.alltalents,
+.more,
+.talenth {
+    width: 100%;
+    height: auto;
+    margin: 0px 0 15px 0;
+}
+
+.alltalents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.alltalents li {
+    list-style: none;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin: 5px 6px 5px 0px;
+}
+
+.talent .talents .alltalents li:hover {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(25, 25, 25);
+    color: rgb(236, 236, 236);
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.talenth h1 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.more button {
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid rgba(185, 185, 185, 0.614);
+}
+
+.more button:hover {
+    border: 2px solid rgb(3, 45, 94);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width:890px) {
+    .talent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .talentheading {
+        width: 90%;
+    }
+
+    .talentheading h1 {
+        margin-left: 0;
+        font-size: 45px;
+    }
+
+    .talents {
+        width: 90%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}

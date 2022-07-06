@@ -1,0 +1,119 @@
+.landing {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.landingcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    /* background-color: azure; */
+    background-color: rgb(238, 238, 238)
+}
+
+.landingcontent h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.welcomedetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    /* background-color: azure; */
+    background-color: rgb(238, 238, 238);
+}
+
+.welcomedetails li {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(193, 192, 192);
+    margin: 5px 0;
+    list-style: none;
+    border-radius: 10px;
+    padding: 4px;
+    /* box-shadow: rgba(67, 71, 85, 0.527) 0px 0px 0.5em, rgba(90, 125, 188, 0.505) 0px 0.15em 1em; */
+
+}
+
+.welcomedetails li:hover {
+    border: 1px solid rgb(193, 192, 192);
+    box-shadow: rgba(67, 71, 85, 0.17) 0px 0px 0.5em, rgba(90, 125, 188, 0.05) 0px 0.15em 1em;
+    transition: 0.2s;
+}
+
+.landingphoto {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateY(15%);
+    height: 45vw;
+    overflow: hidden;
+}
+
+.photo {
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    transform: translateX(30%);
+    background-color: rgb(127, 255, 140) !important;
+    border-radius: 50%;
+    /* overflow: hidden;
+    object-fit: cover; */
+}
+
+
+@media screen and (max-width:800px) {
+    .landing {
+        flex-direction: column;
+
+    }
+
+    .landingcontent {
+        width: 90%;
+    }
+
+    .landingcontent h1 {
+        width: 80vw;
+        margin: 10px 10px 30px 10px;
+    }
+
+    .welcomedetails {
+        width: 80vw;
+    }
+
+    .welcomedetails li {
+        width: 100%;
+    }
+
+    .photo {
+        transform: translateX(0%);
+    }
+
+    .landingphoto {
+        width: 60vw;
+        height: 60vw;
+        transform: translateY(20%);
+    }
+
+
+}

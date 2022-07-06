@@ -1,0 +1,36 @@
+
+<head>
+    <link rel="stylesheet" href="f.css">
+  </head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="formbody">
+            <form action="email-script.php" method="post" class="formelements">
+                <div class="elements">
+                    <label for="inputEmail">From <span style="color: #FF0000">*</span></label>
+                    <input type="text" name="fromEmail" id="fromEmail" class="form-control"  value="info@codingbirdsonline.com" readonly required autofocus>
+                </div> 
+
+                <div class="elements">
+                    <label for="inputEmail">To <span style="color: #FF0000">*</span></label>
+                    <input type="text" name="toEmail" id="toEmail" class="form-control" placeholder="Email address" required autofocus>
+                </div> 
+
+                <div class="elements">
+                    <label for="inputPassword">Subject <span style="color: #FF0000">*</span></label>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+
+                <div class="elements">
+                    <label for="inputPassword">Message <span style="color: #FF0000">*</span></label>
+                    <textarea  id="message" name="message" class="form-control" placeholder="Message" required ></textarea>
+                </div>
+
+                <button type="submit" name="sendMailBtn" class="emailbutton" >Send Email</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

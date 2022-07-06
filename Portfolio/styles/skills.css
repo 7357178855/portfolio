@@ -1,0 +1,101 @@
+.skill {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(216, 229, 239);
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skillheading {
+    width: 40%;
+    height: 100%;
+}
+
+.skillheading h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 5vw;
+}
+
+.skills {
+    width: 35vw;
+    margin-right: 10vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.allskills,
+.more,
+.skillh {
+    width: 100%;
+    height: auto;
+    margin: 0px 0 15px 0;
+}
+
+.allskills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.allskills li {
+    list-style: none;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin: 5px 6px 5px 0px;
+}
+
+.allskills li:hover {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(25, 25, 25);
+    color: rgb(236, 236, 236);
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.skillh h1 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.more button {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(144, 176, 201, 0);
+
+    border: 2px solid rgba(185, 185, 185, 0.614);
+}
+
+@media screen and (max-width:890px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skillheading {
+        width: 90%;
+    }
+
+    .skillheading h1 {
+        margin-left: 0;
+        font-size: 45px;
+    }
+
+    .skills {
+        width: 90%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+
+}

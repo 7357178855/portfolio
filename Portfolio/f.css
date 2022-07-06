@@ -1,0 +1,41 @@
+.container{
+width: 50%;
+height: 600px;
+background-color: aqua;
+margin: auto;
+}
+.formbody{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(76, 165, 165);
+}
+.elements{
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto;
+}
+
+.formelements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto;
+}
+.elements input{
+    width: 100%;
+}
+.elements input:focus{
+    width: 100%;
+    border: none;
+}
+.elements textarea{
+    width: 100%;
+}
+.emailbutton{
+    width: 90%; 
+    margin: 10px auto;
+}
